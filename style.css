@@ -1,0 +1,140 @@
+html {
+    height: 100%;
+}
+body {
+    background-image: url(images/mihai-moisa-Djtc1T38-GY-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header {
+    text-align: center; 
+    background-image: linear-gradient(to right, rgba(177,92,1,0.5), rgba(209,136,77,0.5), rgba(255,255,255,0.4), rgba(209,136,77,0.5), rgba(177,92,1,0.5) );
+}
+.logo img {
+    height: 80px;
+}
+.nav-wrapper {
+    background-color: rgba(7, 7, 7, 0.678);
+    width: 100%;
+    border-bottom: 1px solid rgba(177,92,1,0.5);
+}
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline-start: 0;
+    width: 950px;
+    margin: 0 auto;
+  }
+  .nav-list__item {
+    display: inline;
+    margin: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: white;
+  }
+  
+main {
+    background-color: rgba(0,0,0,.3);
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 190px;
+    padding-right: 190px;
+    padding-bottom: 80px;
+    flex: 1 0 auto;
+}
+p {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-family:Arial, Helvetica, sans-serif, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    width: 650px;
+    margin: 0 auto 30px auto;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.button-make-reservation {
+    background-image: linear-gradient(to right, rgba(177,92,1,0.5), rgba(209,136,77,0.5), rgba(255,255,255,0.2), rgba(209,136,77,0.5), rgba(177,92,1,0.5) );
+    color: white;
+    cursor: pointer;
+    padding: 0.75em;
+    margin-bottom: 4rem;   
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.button-make-reservation span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: all 0.5s;
+}
+.button-make-reservation span:after {
+    content: '\2192';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    transition: all 750ms;
+  }
+.button-make-reservation:hover span {
+    padding-right: 25px;
+    opacity: 1;
+  }
+.button-make-reservation:hover {
+    background-image: linear-gradient(to right, rgba(177,92,1,0.5), rgba(209,136,77,0.5), rgba(255,255,255,0.2), rgba(209,136,77,0.5), rgba(177,92,1,0.5) );
+    color: white;
+}
+.button-make-reservation:hover span:after {
+    opacity: 1;
+    right: 0;
+    text-align: center;
+}
+.footer-wrapper {
+    background-color: rgba(7, 7, 7, 0.8);
+    width: 100%;
+    border-top: 1px solid rgba(177,92,1,0.5);
+}
+footer {
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    padding: 30px;
+    width: 950px;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline-start: 0;
+    margin: 0 auto;
+}
+.footer__copyright p {
+    font-size: 12px;
+    color: white;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+.footer__socials {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+}
+.footer__socials a {
+    font-size: 12px;
+    color: white;
+    text-align: right;
+    padding: 0;
+}
+.footer__socials img {
+    height: 18px;
+    width: 18px;
+}
